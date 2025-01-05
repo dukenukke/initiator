@@ -113,22 +113,6 @@ static int16_t set_rele_state(bool active) {
     return rc;
 }
 
-void rele_task(void *pvParameters) {
-    int16_t relay_state = set_rele_state(false); // Initial state
-
-    while (true) {
-        if (bat_ok && circuit_break_ok) {
-            if (mus_active || interrupt_triggered) {
-                if (relay_state != 1) set_rele_state(true);
-            }
-        } else {
-            if (relay_state != 0) set_rele_state(false);
-        }
-
-        vTaskDelay(pdMS_TO_TICKS(10));
-    }
-}
-
 void mus_task(void *pvParameters) {
     bool last_state = false;
     uint32_t last_time = 0;
