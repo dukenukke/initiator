@@ -66,6 +66,9 @@ target_sources(initiator PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/lib/ws2812/ws2812_pio.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/vTask_led.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/vTask_adc.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/vTask_relay.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/vTask_accel.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/vTask_mus.c
 )
 
 # Add the standard include files to the build

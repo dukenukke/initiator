@@ -41,7 +41,9 @@
         "task.h": "c",
         "ws2812_task.h": "c",
         "vtask_led.h": "c",
-        "ws2812_pio.h": "c"
+        "ws2812_pio.h": "c",
+        "stdlib.h": "c",
+        "vtask_relay.h": "c"
     },
     "idf.espIdfPathWin": "C:\\Users\\mayur\\esp\\v5.2.1\\esp-idf",
     "idf.toolsPathWin": "C:\\Users\\mayur\\.espressif"
